@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Student Details</title>
+ <link rel="stylesheet" href="formstyle.css">
+ <meta charset="UTF-8">
+</head>
+<body>
+
+<center>
+<form action="student.php" method="POST">
+
+<fieldset>
+<legend>Student Details</legend>
+
+<label for="ID">ID</label><br>
+<input type="numeric" id="ID" name="ID"  placeholder="000111" 
+pattern="[0-9]{6}" maxlength="6" required>
+<br><br>
+<label for="Name">Name</label><br>
+<input type="text" id="Name" name="Name" required>
+<br><br>
+<label for="dep">Department</label><br>
+<input type="text" id="dep" name="dep"  required>
+<br><br>
+<label for="prg">Program</label><br>
+<input type="text" id="prg" name="prg" required>
+<br><br>
+<label for="sem">Semester</label><br>
+<input type="numeric" id="sem" name="sem" required>
+<br><br>
+
+<label for="Phone">Phone No</label><br>
+<input type="tel" id="Phone" name="Phone" placeholder="0300-1111222" 
+        pattern="[0-9]{4}-[0-9]{7}"    required>
+<br><br>
+<label for="add">Address</label><br>
+<input type="address" id="add" name="add" required>
+<br><br>
+
+
+<input id ="b1" type="submit" name="AddStudent" value="Add Student">
+
+</fieldset>
+
+
+</form>
+</center>
+
+</body>
+</html>

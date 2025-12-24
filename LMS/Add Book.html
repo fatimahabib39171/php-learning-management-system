@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <title>Book Form</title>
+ <link rel="stylesheet" href="formstyle.css">
+ <meta charset="UTF-8">
+</head>
+<body>
+
+   <header>
+  
+  <center>
+<form action="addbook.php" method="POST">
+  
+  
+<fieldset>
+<legend>Book Details</legend>
+
+<label for="code">Book Code</label><br>
+<input type="numeric" id="code" name="code" 
+   placeholder="0001" pattern="[0-9]{4}" maxlength="4" required>
+<br><br>
+<label for="title">Book Title</label><br>
+<input type="text" id="title" name="title" required>
+<br><br>
+<label for="isbn">ISBN</label><br>
+<input type="numeric" id="isbn" name="isbn" maxlength="8"required>
+<br><br>
+<label for="author">Author</label><br>
+<input type="text" id="author" name="author" required>
+<br><br>
+<label for="category">Category</label><br>
+<input type="text" id="category" name="category" required>
+<br><br>
+<label for="publisher">Publisher Name</label><br>
+<input type="text" id="publisher" name="publisher" required>
+<br><br>
+<label for="year">Year of Publishing</label><br>
+<input type="numeric" id="year" name="year"
+ placeholder="2001"pattern="[0-9]{4}" maxlength="4" required>
+<br><br>
+<label for="edition">Edition</label><br>
+<input type="numeric" id="edition" name="edition" required>
+<br><br>
+<label for="pages">No of Pages</label><br>
+<input type="numeric" id="pages" name="pages" required>
+<br><br>
+
+
+<input id="b1" type="submit" name="AddBook" value="Add Book">
+
+</fieldset>
+
+
+</form>
+</center>
+</header>
+
+</body>
+</html>

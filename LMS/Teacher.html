@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Teacher Details</title>
+ <link rel="stylesheet" href="formstyle.css">
+ <meta charset="UTF-8">
+</head>
+<body>
+
+<center>
+<form action="teacher.php" method="POST">
+
+<fieldset>
+<legend>Teacher Details</legend>
+
+<label for="ID">ID</label><br>
+<input type="numeric" id="ID" name="ID" placeholder="00011" pattern="[0-9]{5}" maxlength="5" required>
+<br><br>
+<label for="Name">Name</label><br>
+<input type="text" id="Name" name="Name" required>
+<br><br>
+<label for="dep">Department</label><br>
+<input type="text" id="dep" name="dep"  required>
+<br><br>
+<label for="desg">Designation</label><br>
+<input type="text" id="desg" name="desg" required>
+<br><br>
+
+<label for="Phone">Phone No</label><br>
+<input type="tel" id="Phone" name="Phone" placeholder="0300-1111222" pattern="[0-9]{4}-[0-9]{7}"   maxlength="12" required>
+<br><br>
+<label for="add">Address</label><br>
+<input type="address" id="add" name="add" required>
+<br><br>
+
+
+<input id ="b1" type="submit" name="AddTeacher" value="Add Teacher">
+
+</fieldset>
+
+
+</form>
+</center>
+
+</body>
+</html>

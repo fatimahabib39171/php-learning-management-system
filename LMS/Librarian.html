@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Librarian Form</title>
+ <link rel="stylesheet" href="formstyle.css">
+ <meta charset="UTF-8">
+</head>
+<body>
+
+<center>
+<form action="librarian.php" method="POST">
+
+<fieldset>
+<legend>Librarian Details</legend>
+
+<label for="ID">ID</label><br>
+<input type="numeric" id="ID" name="ID"  placeholder="001" pattern="[0-9]{3}" maxlength="3" required>
+<br><br>
+<label for="Name">Name</label><br>
+<input type="text" id="Name" name="Name" required>
+<br><br>
+<label for="Phone">Phone No</label><br>
+<input type="tel" id="Phone" name="Phone" placeholder="0300-1111222" 
+        pattern="[0-9]{4}-[0-9]{7}"    required>
+<br><br>
+<label for="Address">Address</label><br>
+<input type="address" id="Address" name="Address" required>
+<br><br>
+<label for="JoiningDate">Joining Date</label><br>
+<input type="Date" id="JoiningDate" name="JoiningDate"  required>
+<br><br>
+
+<input id="b1" type="submit" name="AddLibrarian" value="AddLibrarian">
+
+</fieldset>
+
+
+</form>
+</center>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+body{
+   
+	background-image: url('images/L2.jpg');
+
+  
+}
+
+fieldset{
+	
+	text-align: center;
+    display: block;
+    width: 300px;
+     border: 2px solid black;
+
+}
+h5{
+    text-align: center;
+    font-size: 50px;
+
+}
+button{
+    width:80px;
+}
+#b1:hover {
+    background-color:black;
+    color: white;
+    border-radius: 8px;
+   
+}
+form
+{
+    background-image: url('images/L4.jpg');
+    color : black;
+    width: 375px;
+    
+}
